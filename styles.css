@@ -85,25 +85,125 @@ body {
     background-color: #0056b3;
   }
   
-  /* Info Grid */
-  .info-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
+  /* Info Grid Section */
+.info-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Add spacing between the boxes */
+    padding: 30px 20px;
+    background-color: #f8f8f8; /* Subtle background for the section */
   }
   
+  /* Individual Info Box Styling */
   .info-box {
     text-align: center;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+    flex: 1; /* Make all boxes equal in size */
+    max-width: 300px; /* Optional: Set max width for boxes */
   }
   
+  /* Hover Effect for Info Boxes */
+  .info-box:hover {
+    transform: translateY(-10px); /* Lift the box slightly on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+    background-color: #f2f2f2; /* Slightly change background color */
+  }
+  
+  /* Text inside Info Box */
   .info-box h3 {
-    font-size: 18px;
+    font-size: 20px;
+    color: #333;
     margin-bottom: 10px;
+  }
+  
+  .info-box p {
+    font-size: 16px;
+    color: #666;
+  }  
+
+  /* About Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+    background-color: #fff;
+    border-top: 2px solid #eee;
+  }
+  
+  .about-content {
+    display: flex;
+    max-width: 1200px;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for the hover effect */
+  }
+  
+  /* Hover Effect for the Entire Section */
+  .about-content:hover {
+    transform: scale(1.03); /* Slight zoom for the entire section */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow to the section */
+  }
+  
+  /* About Image */
+  .about-image img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth animation for image */
+  }
+  
+  .about-content:hover .about-image img {
+    transform: scale(1.05); /* Image zooms slightly when section is hovered */
+  }
+  
+  /* About Text */
+  .about-text {
+    max-width: 500px;
+  }
+  
+  .about-text h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .about-text h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Button with Hover Effect */
+  .about-text button {
+    padding: 10px 20px;
+    background-color: #d9d4cc;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth animation */
+  }
+  
+  .about-text button:hover {
+    background-color: #bcb3a6;
+    transform: scale(1.1);
   }
   
