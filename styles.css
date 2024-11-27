@@ -206,4 +206,20 @@ body {
     background-color: #bcb3a6;
     transform: scale(1.1);
   }
+ /* try wala */
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover, nav ul li a:focus {
+    color: #ff6600; /* Highlight color on hover */
+  }
+  
+  nav ul li a.active {
+    color: #ff6600; /* Highlight color for the active link */
+    font-weight: bold;
+  }
   
