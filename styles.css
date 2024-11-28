@@ -223,3 +223,480 @@ body {
     font-weight: bold;
   }
   
+  /* Debate Section Styles */
+.debate-section {
+  padding: 60px 20px;
+  background-color: #f9f6f2;
+  border-top: 2px solid #ddd;
+}
+
+.debate-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.debate-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.debate-box {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  flex: 1;
+  align-items: center;
+}
+
+/* Hover Effect */
+.debate-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Debate Images */
+.debate-image img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Debate Text */
+.debate-text {
+  flex: 1;
+}
+
+.debate-text h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.debate-text .subtitle {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.debate-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.debate-text button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #d9d4cc;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.debate-text button:hover {
+  background-color: #bcb3a6;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .debate-row {
+    flex-direction: column;
+  }
+
+  .debate-image img {
+    width: 100%;
+  }
+}
+
+/* Debate Section Styling */
+.debate-section {
+  background-color: #f5efe8;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+/* Correcting and styling h1 element within #destinations */
+#destinations h101 {
+  font-size: 3.5em;  /* Increase font size */
+  font-weight: bold; /* Make the font bold */
+  color: #333;       /* Set the text color */
+  text-align: center; /* Center align the title */
+  margin-bottom: 30px; /* Add space below the title */
+}
+
+/* Pros and Cons Section */
+.pros-cons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+/* Pros Section */
+.pros {
+  flex: 1;
+  padding: 20px;
+  margin: 0 10px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for Pros Section */
+.pros:hover {
+  transform: scale(1.05);     /* Slightly enlarge the entire section on hover */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Cons Section */
+.cons {
+  flex: 1;
+  padding: 20px;
+  margin: 0 10px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for Cons Section */
+.cons:hover {
+  transform: scale(1.05);     /* Slightly enlarge the entire section on hover */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Common styles for heading and list items */
+.pros h3, .cons h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pros ul, .cons ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pros li, .cons li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* VS Text */
+.vs-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vs-text h1 {
+  font-size: 60px;
+  color: #333333;
+  font-weight: bold;
+}
+
+/* Topics List Section */
+.topics {
+  background-color: #ffffff; /* White background for better readability */
+  border-radius: 10px;      /* Rounded corners */
+  padding: 40px;            /* Increase padding for more space inside */
+  margin: 20px auto;        /* Center the section horizontally */
+  max-width: 1000px;        /* Make the section wider */
+  text-align: left;         /* Align text to the left */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin-top: 40px;         /* Add space between Pros and Cons and List of Topics */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for Entire Section */
+.topics:hover {
+  transform: scale(1.05);     /* Slightly enlarge the entire section on hover */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Heading for Topics List */
+.topics h3 {
+  font-size: 22px;          /* Font size for the title */
+  font-weight: bold;        /* Bold title */
+  margin-bottom: 20px;      /* Space below the title */
+  color: #333333;           /* Darker color for the title */
+  text-align: center;       /* Center-align the heading */
+}
+
+/* Topics List Unordered List */
+.topics ul {
+  list-style: none;         /* Remove default bullet points */
+  padding: 0;               /* Remove padding around the list */
+}
+
+/* List Items in Topics List */
+.topics li {
+  font-size: 18px;          /* Size for list items */
+  margin-bottom: 15px;      /* Space between list items */
+  color: #000000;           /* Black text for readability */
+  font-weight: bold;        /* Bold text */
+  text-transform: uppercase; /* Make all text uppercase */
+  cursor: pointer;          /* Add a pointer cursor to indicate interactivity */
+}
+
+/* Hover Effect for List Items - You can keep this if you still want individual hover effects */
+.topics li:hover {
+  color: #007acc;           /* Change text color on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+
+/* Extempore Section Styles */
+.extempore-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.extempore-section .content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.extempore-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.extempore-section p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Horizontal Scrollable Section */
+.extempore-section .topics-grid {
+  display: flex;
+  gap: 30px; /* Larger gap for better spacing */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  padding-bottom: 10px; /* Adds space below the images for better scrolling experience */
+  scroll-snap-type: x mandatory; /* Smooth snapping while scrolling */
+}
+
+.extempore-section .topics-grid::-webkit-scrollbar {
+  height: 8px; /* Adjusts the scrollbar height */
+}
+
+.extempore-section .topics-grid::-webkit-scrollbar-thumb {
+  background: #ccc; /* Scrollbar thumb color */
+  border-radius: 4px;
+}
+
+.extempore-section .topics-grid::-webkit-scrollbar-thumb:hover {
+  background: #aaa; /* Scrollbar thumb hover color */
+}
+
+.extempore-section .topic {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px; /* Increased width for a larger section */
+  flex: 0 0 auto; /* Prevents the images from shrinking */
+  text-align: center;
+  scroll-snap-align: start; /* Ensures each card aligns properly while scrolling */
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.extempore-section .topic img {
+  width: 100%;
+  height: 250px; /* Adjusted height to make the images more prominent */
+  object-fit: cover; /* Ensures the images are properly cropped to fit */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect */
+.extempore-section .topic:hover img {
+  transform: scale(1.1); /* Zoom effect on hover */
+  filter: brightness(0.9); /* Slightly darkens the image for emphasis */
+}
+
+.extempore-section .topic:hover {
+  transform: translateY(-5px); /* Slight upward movement of the card */
+}
+
+.extempore-section .topic h3 {
+  font-size: 20px; /* Slightly larger font for better readability */
+  font-weight: bold;
+  color: #333;
+  padding: 15px 0;
+  margin: 0;
+}
+
+
+/* Extempore Topics Section Styles */
+.extempore-topics-section {
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Background color for the entire section */
+}
+
+/* Wrapper for description and topic list */
+.topics-wrapper {
+  display: flex;
+  flex-wrap: nowrap; /* Keep both columns side by side */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px; /* Increased gap between description and topics */
+  max-width: 1400px; /* Increased width for the wrapper */
+  margin: 0 auto;
+  background-color: #fff; /* White background to enclose both sections */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for the wrapper */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for better separation */
+}
+
+/* Left Column: Description */
+.topic-description {
+  flex: 1 1 48%; /* Flexbox to allow responsive resizing */
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 18px;
+  line-height: 1.8;
+  border-radius: 8px;
+  background-color: #fff; /* White background for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effect */
+}
+
+/* Hover effect for description */
+.topic-description:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker and larger shadow */
+}
+
+/* Right Column: Topics List */
+.topics-list {
+  flex: 1 1 48%; /* Flexbox to allow resizing */
+  padding: 20px;
+  border: 2px solid #ddd; /* Light gray border around the list */
+  border-radius: 8px;
+  background-color: #fff; /* White background for the list */
+  min-height: 500px; /* Minimum height to make the list taller */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space evenly in the list */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effect */
+}
+
+/* Hover effect for topics list */
+.topics-list:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker and larger shadow */
+}
+
+/* Optional: If you want more space between list items */
+.topics-list li {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin: 25px 0; /* Increased margin for more space between items */
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease; /* Added transition for hover effect on items */
+}
+
+/* Hover effect for list items */
+.topics-list li:hover {
+  color: #000000; /* Lighter blue on hover */
+  transform: translateX(5px); /* Slide effect when hovering over list items */
+}
+
+.topics-list li::after {
+  content: "→"; /* Adds an arrow on hover */
+  position: absolute;
+  right: -30px;
+  font-size: 18px;
+  color: #000000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.topics-list li:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* Page Scroll Arrows */
+.scroll-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.scroll-arrows .arrow {
+  text-align: center;
+  color: #333333;
+}
+
+.scroll-arrows .arrow img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.scroll-arrows .arrow p {
+  font-size: 16px;
+  font-weight: bold;
+}
+/* "Click to read more" button */
+.read-more-btn {
+  display: inline-block;
+  background-color: #000000;
+  color: #fff;
+  padding: 12px 40px; /* Increased horizontal padding for a longer button */
+  border: none;
+  border-radius: 50px; /* Makes the button oval */
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for button */
+.read-more-btn:hover {
+  background-color: #6e2323;
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.extempore-topics-section {
+  background-image: url('images/page-5.jpg'); /* Path to your uploaded image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  text-align: center;
+}
+.debate-section {
+  background-image: url('images/page3.jpg'); /* Path to your uploaded image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  text-align: center;
+}
