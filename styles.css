@@ -683,6 +683,12 @@ body {
   background-color: #6e2323;
   transform: translateY(-3px); /* Lift effect on hover */
 }
+body {
+  background-image: url('images/main-back.jpg'); /* Path to your uploaded image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .extempore-topics-section {
   background-image: url('images/page-5.jpg'); /* Path to your uploaded image */
@@ -692,8 +698,32 @@ body {
   padding: 40px 20px;
   text-align: center;
 }
-.debate-section {
-  background-image: url('images/page3.jpg'); /* Path to your uploaded image */
+.pros {
+  background-image: url(''); /* Path to your uploaded image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  text-align: center;
+}
+.cons{
+  background-image: url(''); /* Path to your uploaded image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  text-align: center;
+}
+.topics {
+  background-image: url('images/grey.png'); /* Path to your uploaded image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  text-align: center;
+}
+.extempore-section {
+  background-image: url('images/image-4.jpeg'); /* Path to your uploaded image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
