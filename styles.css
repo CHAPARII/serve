@@ -409,77 +409,90 @@ body {
   margin-bottom: 30px; /* Add space below the title */
 }
 
-/* Pros and Cons Section */
-.pros-cons {
+/* Pros & Cons Section Styles */
+.pros-cons-container {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  padding: 30px;
+  justify-content: space-around; /* Spaces out the sections horizontally */
+  align-items: center; /* Aligns the sections vertically */
+  margin: 50px 20px;
+  flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+  gap: 40px; /* Adds even more spacing between the sections */
 }
 
-/* Pros Section */
-.pros {
-  flex: 1;
-  padding: 20px;
-  margin: 0 10px;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-}
-
-/* Hover Effect for Pros Section */
-.pros:hover {
-  transform: scale(1.05);     /* Slightly enlarge the entire section on hover */
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-}
-
-/* Cons Section */
+.pros,
 .cons {
-  flex: 1;
-  padding: 20px;
-  margin: 0 10px;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-}
-
-/* Hover Effect for Cons Section */
-.cons:hover {
-  transform: scale(1.05);     /* Slightly enlarge the entire section on hover */
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-}
-
-/* Common styles for heading and list items */
-.pros h3, .cons h3 {
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Larger shadow for a bold look */
+  border-radius: 16px; /* Increased border radius for smoother edges */
+  padding: 50px; /* Larger padding for more spacious content */
+  width: 500px; /* Increased width for bigger sections */
+  height: 400px; /* Increased height for more content */
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.pros ul, .cons ul {
-  list-style: none;
+.pros:hover,
+.cons:hover {
+  background-color: #e0f7ff; /* Brighter blue background on hover */
+  transform: scale(1.1); /* Larger zoom effect */
+}
+
+.pros h3,
+.cons h3 {
+  font-size: 32px; /* Larger font size for headings */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.pros ul,
+.cons ul {
+  list-style-type: none;
   padding: 0;
+  color: #555;
 }
 
-.pros li, .cons li {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #000000;
+.pros ul li,
+.cons ul li {
+  font-size: 22px; /* Larger font size for list items */
+  margin-bottom: 20px; /* More spacing between list items */
+  position: relative;
 }
 
-/* VS Text */
+.pros ul li:before,
+.cons ul li:before {
+  content: "✔";
+  color: #4caf50; /* Green checkmark */
+  margin-right: 12px;
+  font-size: 24px; /* Larger checkmark size */
+}
+
+.pros button,
+.cons button {
+  padding: 16px 40px; /* Larger button size */
+  background-color: #ccc;
+  border: none;
+  border-radius: 40px; /* More oval-shaped buttons */
+  font-size: 18px; /* Bigger font size for buttons */
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pros button:hover,
+.cons button:hover {
+  background-color: #bbb; /* Darker button color on hover */
+  transform: translateY(-8px); /* Moves button slightly upward */
+}
+
 .vs-text {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.vs-text h1 {
-  font-size: 60px;
-  color: #333333;
+  align-items: center; /* Vertically centers the text */
+  justify-content: center; /* Centers the text horizontally */
+  font-size: 70px; /* Much larger font size for "VS" */
   font-weight: bold;
+  color: #333;
+  padding: 0 40px; /* Adds more spacing around the text */
 }
 
 /* Topics List Section */
@@ -756,7 +769,7 @@ body {
   transform: translateY(-3px); /* Lift effect on hover */
 }
 body {
-  background-image: url('images/main-back.jpg'); /* Path to your uploaded image */
+  background-image: url('images/page-5.1.jpg'); /* Path to your uploaded image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -794,11 +807,127 @@ body {
   padding: 40px 20px;
   text-align: center;
 }
-.extempore-section {
-  background-image: url('images/image-4.jpeg'); /* Path to your uploaded image */
+.debate-section {
+  background-image: url('images/page-5.1.jpg'); /* Path to your uploaded image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 40px 20px;
   text-align: center;
+}
+.extempore-section {
+  background-image: url('images/page-5.1.jpg'); /* Path to your uploaded image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Contact Section Styles with Hover Effects */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contact-details {
+  flex: 1;
+  padding: 10px;
+}
+
+.contact-details h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.contact-details h2:hover {
+  color: #555; /* Slightly darker shade on hover */
+}
+
+.contact-details .contact-description {
+  font-size: 16px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.contact-details p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.contact-details .email a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.contact-details .email a:hover {
+  color: #555; /* Darker shade on hover */
+  text-decoration: underline; /* Adds underline effect */
+}
+
+.contact-form {
+  flex: 1;
+  padding: 10px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #666; /* Border becomes darker on focus */
+  box-shadow: 0 0 5px rgba(102, 102, 102, 0.5); /* Adds a subtle glow */
+  outline: none;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 25px; /* Makes the button more oval */
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #aaa; /* Darker shade on hover */
+  transform: translateY(-3px); /* Button moves up slightly */
+}
+
+.contact-form button:active {
+  background-color: #888; /* Even darker when clicked */
+  transform: translateY(0); /* Moves back to original position */
 }
