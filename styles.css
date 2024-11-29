@@ -1,3 +1,242 @@
+/* Reset some base styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Make the container elements responsive */
+.container, .debate-section, .extempore-section, .contact-section, .topics, .pros, .cons {
+  max-width: 100%;
+  padding: 20px;
+}
+
+/* Flexbox layouts for responsiveness */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flex-item {
+  flex: 1 1 100%; /* Full width by default */
+}
+
+@media (min-width: 768px) {
+  .flex-item {
+    flex: 1 1 48%; /* Split the content into two columns for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .flex-item {
+    flex: 1 1 31%; /* Split into three columns for larger screens */
+  }
+}
+.debate-section {
+  background-color: #f5efe8;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Debate Row Layout */
+.debate-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure the layout is flexible for smaller screens */
+}
+
+.debate-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .debate-row {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .debate-image img {
+    width: 100%; /* Ensure images scale to full width */
+  }
+}
+.pros-cons-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pros, .cons {
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.pros:hover, .cons:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .pros, .cons {
+    width: 48%; /* Two items per row on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .pros, .cons {
+    width: 31%; /* Three items per row on larger screens */
+  }
+}
+.topics {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.topics h3 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.topics ul {
+  list-style: none;
+  padding: 0;
+}
+
+.topics li {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .topics {
+    padding: 20px 10px;
+  }
+
+  .topics h3 {
+    font-size: 20px; /* Adjust heading size on smaller screens */
+  }
+
+  .topics li {
+    font-size: 16px; /* Smaller font for list items on mobile */
+  }
+}
+.extempore-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.extempore-section .topics-grid {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+}
+
+.extempore-section .topic {
+  width: 300px;
+  margin: 10px;
+}
+
+.extempore-section .topic img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .extempore-section .topics-grid {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .extempore-section .topic {
+    width: 100%; /* Make topics take full width on smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-details, .contact-form {
+  flex: 1 1 100%;
+  padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 12px 40px;
+  background-color: #000;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .contact-details, .contact-form {
+    flex: 1 1 48%; /* Two columns on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-details, .contact-form {
+    flex: 1 1 48%; /* Two columns on larger screens */
+  }
+}
+.scroll-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-arrows .arrow img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.read-more-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .scroll-arrows .arrow img {
+    width: 40px; /* Smaller arrows on mobile */
+  }
+
+  .read-more-btn {
+    font-size: 14px; /* Smaller text size for buttons on mobile */
+  }
+}
+
 /* Reset styles */
 body {
     margin: 0;
@@ -31,13 +270,13 @@ header .logo {
 }
 
 header .logo img {
-  max-width: 80px; /* Reduce the size of the logo */
+  max-width: 60px; /* Reduce the size of the logo */
   height: auto;
 }
 
 header .logo h1 {
   margin-left: 10px;
-  font-size: 20px; /* Adjust font size */
+  font-size: 18px; /* Slightly smaller font size */
   color: #333;
 }
 
