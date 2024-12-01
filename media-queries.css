@@ -1,0 +1,72 @@
+@media screen and (max-width: 991) {
+  .nav-toogle {
+       display: block;
+       margin-right: 20px;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .intro h2 {
+      font-size: 32px;
+    }
+  
+    .intro button {
+      font-size: 16px;
+      padding: 10px 30px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .intro h2 {
+      font-size: 26px;
+    }
+  
+    .intro button {
+      font-size: 14px;
+      padding: 8px 25px;
+    }
+  
+    .intro {
+      max-width: 90%;
+    }
+  }
+  
+  /* my own */
+
+  @media screen and (width < 768px) {
+
+    .home {
+        padding-top: 10px;
+    }
+
+    header {
+        padding-top: 5px;
+        padding-bottom: 10px;
+        height: 70px;
+    }
+    
+    .banner button {
+        width: 90%;
+    }
+
+    .banner img {
+        width: 100%;
+
+    }
+
+    .banner .intro {
+        max-width: 300%;
+        text-align: center;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .pros-cons-container {
+        flex-direction: row;
+        width: 50%;
+    }
+
+  }
