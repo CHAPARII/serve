@@ -638,6 +638,37 @@ header.expanded {
   padding: 0 40px; /* Adds more spacing around the text */
 }
 
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .pros-cons-container {
+    flex-direction: row;  /* Align items horizontally */
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .pros,
+  .cons {
+    width: 45%;  /* Smaller width for pros and cons */
+    height: auto;  /* Let the height adjust for smaller screens */
+    padding: 20px;  /* Less padding for a compact look */
+  }
+
+  .vs-text {
+    font-size: 50px;  /* Smaller font size for the "VS" text */
+    padding: 0 20px; /* Adjust padding */
+  }
+
+  .pros button,
+  .cons button {
+    font-size: 16px;  /* Slightly smaller button font */
+  }
+
+  .pros ul li,
+  .cons ul li {
+    font-size: 18px;  /* Slightly smaller font size for list items */
+  }
+}
+
 /* Topics List Section */
 .topics {
   background-color: #ffffff; /* White background for better readability */
