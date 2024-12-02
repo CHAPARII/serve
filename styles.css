@@ -830,7 +830,7 @@ header.expanded {
 }
 
 /* Responsive Design: Horizontal Scroll for Smaller Screens */
-@media (max-width: 768px) {
+@media (max-width: 778px) {
   .extempore-section .topics-grid {
     display: flex;
     overflow-x: auto;
