@@ -551,121 +551,168 @@ header.expanded {
   margin-bottom: 30px; /* Add space below the title */
 }
 
-/* Pros & Cons Section Styles */
+/* Container Styling */
 .pros-cons-container {
   display: flex;
-  justify-content: space-around; /* Spaces out the sections horizontally */
-  align-items: center; /* Aligns the sections vertically */
+  justify-content: space-around;
+  align-items: center;
   margin: 50px 20px;
-  flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
-  gap: 40px; /* Adds even more spacing between the sections */
+  flex-wrap: wrap; /* Ensures it adjusts on smaller screens */
+  gap: 40px;
 }
 
-/* Pros and Cons Boxes */
+/* Pros and Cons Panels */
 .pros,
 .cons {
-  background: #fff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Larger shadow for a bold look */
-  border-radius: 16px; /* Increased border radius for smoother edges */
-  padding: 50px; /* Larger padding for more spacious content */
-  width: 500px; /* Increased width for bigger sections */
-  height: 400px; /* Increased height for more content */
+  background: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+  width: 400px;
   text-align: center;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .pros:hover,
 .cons:hover {
-  background-color: #e0f7ff; /* Brighter blue background on hover */
-  transform: scale(1.1); /* Larger zoom effect */
+  background-color: #e6f7ff; /* Subtle hover effect */
+  transform: scale(1.05); /* Slight zoom */
 }
 
+/* Heading Styles */
 .pros h3,
 .cons h3 {
-  font-size: 32px; /* Larger font size for headings */
+  font-size: 28px;
   font-weight: bold;
+  margin-bottom: 20px;
   color: #333;
-  margin-bottom: 25px;
 }
 
+/* List Styling */
 .pros ul,
 .cons ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   color: #555;
+  margin-bottom: 20px;
 }
 
 .pros ul li,
 .cons ul li {
-  font-size: 22px; /* Larger font size for list items */
-  margin-bottom: 20px; /* More spacing between list items */
-  position: relative;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.pros ul li:before,
-.cons ul li:before {
+.pros ul li::before,
+.cons ul li::before {
   content: "✔";
-  color: #4caf50; /* Green checkmark */
-  margin-right: 12px;
-  font-size: 24px; /* Larger checkmark size */
+  color: #4caf50; /* Green for "Pros" */
+  margin-right: 10px;
+  font-size: 18px;
 }
 
+.cons ul li::before {
+  content: "✖";
+  color: #f44336; /* Red for "Cons" */
+}
+
+/* Button Styles */
 .pros button,
 .cons button {
-  padding: 16px 40px; /* Larger button size */
-  background-color: #ccc;
+  padding: 10px 30px;
+  background-color: #007acc;
   border: none;
-  border-radius: 40px; /* More oval-shaped buttons */
-  font-size: 18px; /* Bigger font size for buttons */
-  color: #333;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .pros button:hover,
 .cons button:hover {
-  background-color: #bbb; /* Darker button color on hover */
-  transform: translateY(-8px); /* Moves button slightly upward */
+  background-color: #005fa3;
+  transform: translateY(-5px);
 }
 
+/* VS Text Styling */
 .vs-text {
   display: flex;
-  align-items: center; /* Vertically centers the text */
-  justify-content: center; /* Centers the text horizontally */
-  font-size: 70px; /* Much larger font size for "VS" */
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
   font-weight: bold;
   color: #333;
-  padding: 0 40px; /* Adds more spacing around the text */
+  padding: 0 20px;
 }
 
-/* Responsive Design for Smaller Screens */
+/* Default Styling (for larger screens) */
+.pros-cons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 20px;
+  flex-wrap: wrap; /* Ensures it adjusts on smaller screens */
+  gap: 40px;
+}
+
+.pros,
+.cons {
+  background: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+  width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pros:hover,
+.cons:hover {
+  background-color: #e6f7ff; /* Subtle hover effect */
+  transform: scale(1.05); /* Slight zoom */
+}
+
+/* Responsive Design for Full-Width Panels */
 @media (max-width: 768px) {
   .pros-cons-container {
-    flex-direction: row;  /* Align items horizontally */
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: stretch; /* Make children take full width */
+    gap: 30px; /* Add spacing between sections */
+    width: 100%; /* Use full container width */
   }
 
   .pros,
   .cons {
-    width: 45%;  /* Smaller width for pros and cons */
-    height: auto;  /* Let the height adjust for smaller screens */
-    padding: 20px;  /* Less padding for a compact look */
+    width: 100%; /* Make the sections take up full width */
+    max-width: 100%; /* Prevent extra margin */
+    padding: 50px 20px; /* Add padding for better spacing */
+    border-radius: 20px; /* Smooth rounded corners */
   }
 
-  .vs-text {
-    font-size: 50px;  /* Smaller font size for the "VS" text */
-    padding: 0 20px; /* Adjust padding */
-  }
-
-  .pros button,
-  .cons button {
-    font-size: 16px;  /* Slightly smaller button font */
+  .pros h3,
+  .cons h3 {
+    font-size: 30px; /* Larger headings for readability */
+    margin-bottom: 20px;
   }
 
   .pros ul li,
   .cons ul li {
-    font-size: 18px;  /* Slightly smaller font size for list items */
+    font-size: 20px; /* Larger list item text */
+    margin-bottom: 15px; /* Add more spacing between items */
+  }
+
+  .vs-text {
+    font-size: 35px; /* Adjust "VS" size */
+    margin: 20px 0; /* Add spacing around "VS" */
+    width: 100%; /* Full-width alignment */
+    text-align: center;
+  }
+
+  .pros button,
+  .cons button {
+    font-size: 18px; /* Larger button text */
+    padding: 15px 40px; /* Bigger buttons for usability */
   }
 }
 
@@ -721,24 +768,6 @@ header.expanded {
 
 /* Responsive Design for Mobile Devices */
 @media only screen and (max-width: 768px) {
-  .pros-cons-container {
-    flex-direction: column; /* Stack the sections vertically on smaller screens */
-    align-items: center; /* Center-align the content */
-    gap: 20px; /* Reduce the gap between the sections */
-  }
-
-  .pros,
-  .cons {
-    width: 90%; /* Make the panels take up more space on smaller screens */
-    height: auto; /* Let the height adjust automatically based on content */
-    padding: 30px; /* Reduce padding */
-  }
-
-  .vs-text {
-    font-size: 50px; /* Make the "VS" text smaller on mobile */
-    padding: 0 20px; /* Reduce padding around the text */
-  }
-
   .topics {
     width: 100%; /* Make the topics list take up the full width */
     padding: 20px; /* Reduce padding */
@@ -750,11 +779,6 @@ header.expanded {
 
   .topics li {
     font-size: 16px; /* Make list items a bit smaller */
-  }
-
-  .pros button,
-  .cons button {
-    font-size: 16px; /* Adjust button font size */
   }
 }
 
