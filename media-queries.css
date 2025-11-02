@@ -5,7 +5,6 @@
   }
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     .intro h2 {
       font-size: 32px;
@@ -31,8 +30,6 @@
       max-width: 90%;
     }
   }
-  
-  /* my own */
 
   @media screen and (width < 768px) {
 
@@ -71,28 +68,27 @@
 
   }
   
-/* Hide nav links by default on small screens */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Hide the nav links initially */
+    display: none;
     flex-direction: column;
     width: 100%;
     padding: 20px 0;
     background-color: #fff;
     position: absolute;
-    top: 100%; /* Place it right below the header */
+    top: 100%;
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
   }
 
-  /* Show nav links when header is expanded */
   header.expanded .nav-links {
     display: flex;
   }
 
   .nav-toggle {
-    display: block; /* Show the hamburger icon on smaller screens */
+    display: block;
   }
 }
+
 
